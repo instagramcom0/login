@@ -204,3 +204,23 @@ footer .copyright {
     footer .copyright,
     footer ul li a { font-size: 13px; }
 }
+
+.form input #password{
+            width: 100%;
+            padding-right: 40px;
+        }
+        .form .toggle-password {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
+.form input #password , .toggle-password {
+            position: relative;
+            width: 300px;
+        }
+.form .toggle-password {
+                 top: 30.1739% !important;
+                 right: 117px !important;
+}
